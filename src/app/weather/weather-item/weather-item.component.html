@@ -21,7 +21,7 @@
   </div>
   <div class="details__info">
     <ul class="details__list">
-      <li [class]="mode === 'day'? 'details__item--day' : 'details__item'" *ngFor="let item of list" (click)="setCurrentItem(item)" [class.active]="item.time === currentDay" [class.day]="mode === 'day'">
+      <li [class]="mode === 'day'? 'details__item details__item--day' : 'details__item'" *ngFor="let item of list" (click)="setCurrentItem(item)" [class.active]="item.time === currentDay" [class.day]="mode === 'day'">
         <span class="details__date">{{item.time | date : (mode === 'day' ? 'EEEE' : 'HH:mm') :'UTC' | titlecase }}</span>
         <span class="details__day" *ngIf="mode === 'day'">{{item.time | date : 'd MMMM' :'UTC'}}</span>
         <img class="details__icon" [src]="'assets/icons/' + ((mode === 'day' ? item.values.weatherCodeMax : item.values.weatherCode) | weatherIcon)" [alt]="item.values.weatherCode | weatherText">

@@ -2,10 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
-## FRONTEND
+![Alt text](image.png)
 
-Run `npm run start`. Navigate to `http://localhost:4200/`.
 
-## SERVER
-
-Run `npm run start` inside `server` folder.
+Mobile:
+![Alt text](image-1.png)
