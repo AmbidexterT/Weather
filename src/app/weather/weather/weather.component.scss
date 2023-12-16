@@ -1,0 +1,91 @@
+@import "src/assets/styles/variables";
+
+.weather {
+  &-wr {
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet-down() {
+      flex-direction: column;
+    }
+  }
+  &__block {
+    width: calc(50% - 10px);
+    @include media-tablet-down() {
+      width: 100%;
+    }
+
+    &--main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 15px;
+
+      border-radius: 10px;
+
+      @include media-tablet-down() {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__location {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @include media-tablet-down() {
+      font-size: 16px;
+    }
+  }
+  &__point {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+
+    @include media-tablet-down() {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__info {
+    font-size: 24px;
+    text-align: center;
+    &--temperature {
+        font-size: 96px;
+
+        @include media-tablet-down() {
+            font-size: 64px !important;
+        }
+    }
+    @include media-tablet-down() {
+      font-size: 18px;
+    }
+  }
+  &__icon {
+    width: 150px;
+    height: 150px;
+    margin-right: 5px;
+
+    @include media-tablet-down() {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  &__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__retry {
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: $blue;
+    color: $white;
+  }
+  &__items {
+    margin-top: 15px;
+  }
+}

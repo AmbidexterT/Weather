@@ -1,0 +1,19 @@
+.language {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  &__item {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 28px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  top: 10px;
+  &__divider {
+    -webkit-tap-highlight-color: transparent;
+    font-size: 28px;
+    padding: 3px;
+  }
+}
