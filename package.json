@@ -7,7 +7,7 @@
     "build": "ng build --localize --configuration production",
     "watch": "ng build --localize --watch --configuration production",
     "test": "ng test",
-    "deploy": "rm -rf .firebase && npm run build && firebase deploy --only hosting:weathercarebox"
+    "deploy": "rm -rf .firebase && npm run build && firebase deploy --only hosting:weather-30fce"
   },
   "private": true,
   "dependencies": {
