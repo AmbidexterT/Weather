@@ -25,6 +25,9 @@
         "locales": {
           "ru": {
             "translation": "src/locale/messages.ru.xlf"
+          },
+          "en": {
+            "translation": "src/locale/messages.xlf"
           }
         }
       },
