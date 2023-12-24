@@ -23,12 +23,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(
-  cors({
-    origin: [config.domainLocal, config.domain],
-  })
-);
-
 // Route to access Tomorrow API
 app.get("/get-weather", async (req, res) => {
   try {
