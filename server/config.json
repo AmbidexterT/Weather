@@ -1,4 +1,5 @@
 {
   "tomorrowKey": "N23xH4B9DwmpJa2bhOrjHSWRsi5O2gm6",
-  "domain": "https://weather-one-ashy-35.vercel.app"
+  "domain": "https://weather-one-ashy-35.vercel.app",
+  "domainLocal": "http://localhost:4200"
 }

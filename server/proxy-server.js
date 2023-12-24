@@ -9,6 +9,7 @@ app.use(express.json());
 // CORS handling middleware
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', config.domain);
+  res.header('Access-Control-Allow-Origin', config.domainLocal);
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
