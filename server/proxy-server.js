@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = process.env.PORT || 3000;;
+const PORT = process.env.PORT || 3000;
 let config = process.config.weather || require('./config.json');
 
 app.use(express.json());
@@ -27,3 +27,5 @@ app.get('/get-weather', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+module.exports = app;
