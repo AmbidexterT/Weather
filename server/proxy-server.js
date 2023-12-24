@@ -1,6 +1,5 @@
 const express = require('express');
 const axios = require('axios');
-const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 let config = process.config.weather || require('./config.json');
@@ -13,10 +12,6 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
-
-app.use(cors({
-    origin: [config.domainLocal, config.domain]
-}));
 
 // Route to access Tomorrow API
 app.get('/get-weather', async (req, res) => {
