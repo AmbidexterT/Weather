@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "https://weather-n1kv.vercel.app/",
+      "target": "https://weather-n1kv.vercel.app",
       "secure": false,
       "changeOrigin": true
     }
